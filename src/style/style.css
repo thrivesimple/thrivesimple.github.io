@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+/* Reset spaces */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 250, 248);
+}
+
+/* Selection */
+::selection {
+    background-color: rgb(163, 234, 255);
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+/* LOGO */
+header {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+
+    h1 {
+        font-family: "Oswald", sans-serif;
+        font-size: 3rem;
+    
+        span {
+            /* color: rgb(108, 143, 255); */
+        }
+    }
+}
+
+
+/* MAIN */
+main {
+    section {
+        text-align: center;
+        padding-bottom: 6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        div {
+
+            padding-bottom: 6rem;
+
+            h2 {
+                font-family: "Gloock", serif;
+                font-size: 4rem;
+                color: rgb(11, 11, 83);
+                letter-spacing: 0.2rem;
+                line-height: 7rem;
+            }
+    
+            p {
+                font-size: 1.5rem;
+                font-family: "Montserrat", sans-serif;
+                font-weight: bold;
+                color: rgb(96, 96, 116);
+            }
+
+        }
+
+        a {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: white;
+            padding: 1.5rem 2rem;
+            background-color: orangered;
+            border-radius: 8px;
+            transition: 250ms ease-in-out;
+        }
+        
+        a:link {
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: rgba(255, 68, 0, 0.637);
+        }
+        
+    }
+}
+
+/* FOOTER */
+footer {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 780px) {
+    
+    main {
+        section {
+    
+            div {
+    
+                h2 {
+                    font-size: 3.5rem;
+                    line-height: 5rem;
+                }
+        
+                p {
+                    font-size: 1.2rem;
+                }
+            
+        }
+    }
+
+  }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    header {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    
+    main {
+        section {
+    
+            div {
+                
+                padding-bottom: 3rem;
+
+                h2 {
+                    font-size: 2.5rem;
+                    line-height: 3.5rem;
+                }
+        
+                p {
+                    font-size: 1.2rem;
+                }
+            
+        }
+    }
+
+  }
+
+}
